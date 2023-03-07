@@ -14,11 +14,11 @@ jobs:
     
     - name: Build Package
       run:
-        python3 -m pip install --upgrade pip build
-        python3 -m build
+        python3 pip install --upgrade pip build
+        python3 build
 
     - name: Publish to TestPyPI
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         password: ${{ secrets.TESTPYPI_API_TOKEN }}
-        repository_url: http://test.pypi.org/legacy/
+        repository_url: https://test.pypi.org/legacy/
