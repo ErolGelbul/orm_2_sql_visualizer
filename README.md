@@ -79,7 +79,7 @@ Duplicate queries: 0
 
 Erol Gelbul - [Website](erolgelbul.com)
 
-Project Link: [ORM2SQL](https://github.com/ErolGelbul/orm-2-sql-vizualizer)
+Project Link: [ORM2SQL](https://github.com/ErolGelbul/orm_2_sql_visualizer)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
