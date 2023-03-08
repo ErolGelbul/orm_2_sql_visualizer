@@ -15,7 +15,7 @@ I built a Python package helps developers visualize their Django ORM queries as 
 This will be a simple guide on how you can add this middleware into your Django project.
 
 
-### Requirements
+### <ins>Requirements</ins>
 
 Apart from Django and Python, the package will automatically install the
 following packages:
@@ -24,7 +24,13 @@ following packages:
 - [Pygments](https://pygments.org/)
 
 
-### Add the Middleware
+### <ins>Install from PyPI</ins>
+
+```bash
+pip install orm-2-sql-visualizer
+```
+
+### <ins>Add the Middleware</ins>
 
 Go to your settings.py file inside your project directory. Add 
 
@@ -32,6 +38,37 @@ Go to your settings.py file inside your project directory. Add
 MIDDLEWARE = [
     'orm-2-sql-visualizer.middleware.new_middleware',
 ]
+```
+
+### <ins>Results</ins>
+
+For each ORM operation, the SQL query will be displayed. If you want to see the
+query, run:
+
+```bash
+pytest -rP
+```
+
+Example:
+```bash
+===============================================
+                [SQL Queries]
+===============================================
+SELECT "demo_app_product"."id",
+       "demo_app_product"."name"
+FROM "demo_app_product"
+```
+
+Additional stats will also be displayed along side of the queries:
+
+```bash
+===============================================
+                 [SQL Stats]
+===============================================
+Total queries: 1
+Total execution time: 0.000ms
+Duplicate queries: 0
+===============================================
 ```
 
 
