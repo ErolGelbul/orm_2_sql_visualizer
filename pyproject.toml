@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "orm-2-sql-visualizer"
-version = "1.0.16"
+version = "1.0.1"
 description = "Visualize your ORM queries as SQL queries and get additional stats about your queries."
 readme = "README.rst"
 license = { text = "MIT" }
