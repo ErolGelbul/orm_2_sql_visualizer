@@ -1,7 +1,7 @@
 <div id="top"></div>
 
 <p align="center">
-  <img src="images/cover_imagev2.jpg">
+  <img src="images/cover_imagev3.jpg">
 </p>
 
 <!-- ABOUT THE PROJECT -->
